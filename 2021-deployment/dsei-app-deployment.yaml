@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dsei-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dsei-app
+  template:
+    metadata:
+      labels:
+        app: dsei-app
+    spec:
+      containers:
+      - name: dsei-app-latest
+        image: quay.io/defencedigital/dsei-app
+        ports:
+        - containerPort: 5000
