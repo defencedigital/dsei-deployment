@@ -9,10 +9,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - app.dsei.foundry.codes
+    - dsei-app.digital.mod.uk
     secretName: dsei-app-tls
   rules:
-  - host: app.dsei.foundry.codes
+  - host: dsei-app.digital.mod.uk
     http:
       paths:
       - path: /
