@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: dsei-app-latest
-        image: quay.io/defencedigital/dsei-app:beta-terrain
+        image: quay.io/defencedigital/dsei-app
         ports:
         - containerPort: 5000
